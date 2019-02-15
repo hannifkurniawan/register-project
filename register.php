@@ -74,6 +74,7 @@ if(isset($_POST['register'])){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="">
@@ -102,7 +103,7 @@ if(isset($_POST['register'])){
                             <label for="">Your Name</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">name</div>
+                                    <div class="input-group-text"><i class="fas fa-user"></i></div>
                                 </div>
                                 <input type="text" class="form-control" name="name" placeholder="Enter Your Name" value="" required>
                             </div>
@@ -111,7 +112,7 @@ if(isset($_POST['register'])){
                             <label for="">Your Email</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">email</div>
+                                    <div class="input-group-text"><i class="fas fa-envelope"></i></div>
                                 </div>
                                 <input type="email" class="form-control" name="email" placeholder="Enter Your Email" value="" required>
                             </div>
@@ -120,7 +121,7 @@ if(isset($_POST['register'])){
                             <label for="">Username</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">username</div>
+                                    <div class="input-group-text"><i class="fas fa-users"></i></div>
                                 </div>
                                 <input type="text" class="form-control" name="username" placeholder="Enter Your Username" value="" required>
                             </div>
@@ -129,7 +130,7 @@ if(isset($_POST['register'])){
                             <label for="">Password</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">password</div>
+                                    <div class="input-group-text"><i class="fas fa-lock"></i></div>
                                 </div>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter Your Password" value="" required>
                             </div>
@@ -138,7 +139,7 @@ if(isset($_POST['register'])){
                             <label for="">Confirm Password</label>
                             <div class="input-group">
                                 <div class="input-group-prepend">
-                                    <div class="input-group-text">password</div>
+                                    <div class="input-group-text"><i class="fas fa-lock"></i></div>
                                 </div>
                                 <input type="password" class="form-control" name="password-confirmation" data-parsley-equalto="#password" placeholder="Confirm Your Password" value="" required>
                             </div>
@@ -154,15 +155,9 @@ if(isset($_POST['register'])){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 	<script>
-        $('form').parsley({
-            errorClass: 'is-invalid text-danger',
-            successClass: 'is-valid', 
-            errorsWrapper: '<span class="form-text text-danger"></span>',
-            errorTemplate: '<span></span>',
-            trigger: 'change'
-        });
+
 	</script>
 </body>
 </html>

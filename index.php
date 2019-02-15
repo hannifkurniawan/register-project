@@ -86,22 +86,6 @@ if(isset($_POST['sign-in'])){
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js"></script>
     <script src="./js/script.js"></script>
 	<script>
-        $('form').parsley({
-            errorClass: 'is-invalid text-danger',
-            successClass: 'is-valid', 
-            errorsWrapper: '<span class="form-text text-danger"></span>',
-            errorTemplate: '<span></span>',
-            trigger: 'change'
-        });
-
-        function myFunction() {
-            var x = document.getElementById("password");
-            if (x.type === "password") {
-                x.type = "text";
-            } else {
-                x.type = "password";
-            }
-        }
 	</script>
 </body>
 </html>
