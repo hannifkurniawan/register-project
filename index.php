@@ -23,10 +23,13 @@ if(isset($_POST['sign-in'])){
         if(password_verify($password, $user["password"])){
             $sqlUpdateLogin = "UPDATE users SET sign_in_counter = sign_in_counter + 1, last_login = NOW() WHERE users.id=:user_id";
             $stmtUpdateLogin = $db->prepare($sqlUpdateLogin);
+            
 
             $paramsUpdateLogin = array(
                 ":user_id" => $user['id']
             );
+
+            $stmtUpdateLogin->execute($paramsUpdateLogin);
 
             session_start();
             $_SESSION["user"] = $user;
