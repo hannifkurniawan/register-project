@@ -6,32 +6,33 @@
 
 ### Index
 In this page, the mainpage displays are
-- Sign in form
 
-Username/Email
+Sign in form
 
-Password
+- Username/Email
 
-- Link to register page
+- Password
+
+Link to register page
 
 When user sign in successfully the system will redirect to dashboard page.
 
 ### Register
 In this page, the mainpage displays are
 
-- Register form
+Register form
 
-Name
+- Name
 
-Email
+- Email
 
-Username
+- Username
 
-Password
+- Password
 
-Password Confirmation
+- Password Confirmation
 
-- Link to Sign in page
+Link to Sign in page
 
 after user fill all the fields and click on register button, the user will redirect to mainpage to sign in.
 
