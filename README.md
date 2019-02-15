@@ -65,7 +65,7 @@ Step by step to use this application :
 
 note:
 
-1. You must have connection to internet because this application use cdn file. 
+1. You must have connection to internet because this application use cdn file (Bootsrap, JQuery, and Parsley).
 2. For best experience, please use chrome. If you get error or trouble, please use different browser. If you have questions, you can contact me by email to hannif.kurniawan@gmail.com
 
 Thanks.
