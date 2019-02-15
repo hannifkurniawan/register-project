@@ -1,5 +1,5 @@
 # register-project
- A register app that allow the user to register and sign in to the system. The project emphasizes using php to build the application.
+ A register app that allow the user to register and sign in to the system. The project use php to build the application.
  
 This application can be accessed on page https://register-project.geneticwear.id
 
@@ -47,6 +47,13 @@ After succesfully sign in the user will redirect to dashboard page and show  to 
 After succesfully sign in, user can exit application and will redirect to index page.
 
 ## How To Use
+
+Before installing  need to install these first :
+1. PHP Version 7.1
+2. Apache Version 2.4
+3. MySQL Version 14.14
+
+Step by step to use this application :
 
 1. Download Project, place it in your `htdocs` or `/var/www/html`. 
 2. Create Database (It is recommended that the name `register_project`).
