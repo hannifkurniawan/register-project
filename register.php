@@ -82,8 +82,8 @@ if(isset($_POST['register'])){
     <div class="container">
             <div class="card">
                 <div class="card-header">
-                <h3>Register</h3>
-            or <a href="./index.php">Sign In</a>
+                    <h3>Register</h3>
+                    or <a href="./index.php">Sign In</a>
                 </div>
                 <div class="card-body">
                     <?php
@@ -144,7 +144,7 @@ if(isset($_POST['register'])){
                                 <input type="password" class="form-control" name="password-confirmation" data-parsley-equalto="#password" placeholder="Confirm Your Password" value="" required>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary" name="register">Register</button>
+                        <button type="submit" class="btn btn-primary float-right" name="register">Register</button>
                     </form>
                 </div>
             </div>

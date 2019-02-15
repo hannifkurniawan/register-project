@@ -28,8 +28,6 @@ if(isset($_POST['sign-in'])){
                 ":user_id" => $user['id']
             );
 
-            $stmtUpdateLogin->execute($paramsUpdateLogin);
-
             session_start();
             $_SESSION["user"] = $user;
             header("Location: dashboard.php");
@@ -73,7 +71,7 @@ if(isset($_POST['sign-in'])){
                             <input type="password" class="form-control" id="password" name="password" placeholder="" required>
                             <small id="" class="form-text text-muted"><input type="checkbox" onclick="myFunction()"> Show password</small>
                         </div>
-                        <button type="submit" class="btn btn-primary" name="sign-in">Sign in</button>
+                        <button type="submit" class="btn btn-primary float-right" name="sign-in">Sign in</button>
                     </form>
                 </div>
             </div>

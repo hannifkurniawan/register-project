@@ -17,18 +17,24 @@
                     Dashboard
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Name</h5>
-                    <p class="card-text"><?php echo  $_SESSION["user"]["name"] ?></p>
-                    <h5 class="card-title">Email</h5>
-                    <p class="card-text"><?php echo  $_SESSION["user"]["email"] ?></p>
-                    <h5 class="card-title">Username</h5>
-                    <p class="card-text"><?php echo  $_SESSION["user"]["username"] ?></p>
-                    <h5 class="card-title">Sign In Counter</h5>
-                    <p class="card-text"><?php echo  $_SESSION["user"]["sign_in_counter"] ?> Times</p>
-                    <h5 class="card-title">Last Login</h5>
-                    <p class="card-text"><?php echo  $_SESSION["user"]["last_login"] ?></p>
+                    <dl class="row">
+                        <dt class="col-sm-3">Name</dt>
+                        <dd class="col-sm-9"><?php echo  $_SESSION["user"]["name"] ?></dd>
+
+                        <dt class="col-sm-3">Email</dt>
+                        <dd class="col-sm-9"><?php echo  $_SESSION["user"]["email"] ?></dd>
+
+                        <dt class="col-sm-3">Username</dt>
+                        <dd class="col-sm-9"><?php echo  $_SESSION["user"]["username"] ?></dd>
+
+                        <dt class="col-sm-3 text-truncate">Sign In Counter</dt>
+                        <dd class="col-sm-9"><?php echo  $_SESSION["user"]["sign_in_counter"] ?> Times without this sign in</dd>
+
+                        <dt class="col-sm-3 text-truncate">Last Login</dt>
+                        <dd class="col-sm-9"><?php echo  $_SESSION["user"]["last_login"] ?></dd>
+                    </dl>
                     
-                    <a href="logout.php" class="btn btn-primary">Logout</a>
+                    <a href="logout.php" class="btn btn-primary float-right">Logout</a>
                 </div>
             </div>
 
